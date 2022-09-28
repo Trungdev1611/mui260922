@@ -1,5 +1,6 @@
 export const sxNav = {
     drawer: {
+        flexShrink: 0,
         width: "250px ", '& .MuiDrawer-paper': {
             width: 250,
             boxSizing: 'border-box',

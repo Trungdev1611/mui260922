@@ -6,9 +6,11 @@ import Functions from './pages/Function'
 import Hosting from './pages/Hosting'
 import Storage from './pages/Storage'
 import MachineLearning from './pages/MachineLearning'
+import { Grid } from '@mui/material'
+
 function App() {
   return (
-    <div className="App">
+    <Grid container>
       <Navbar />
       <Routes>
         <Route path="authentication" element={<Authentication />} />
@@ -19,7 +21,7 @@ function App() {
         <Route path="storage" element={<Storage />} />
 
       </Routes>
-    </div>
+    </Grid>
   );
 }
 
