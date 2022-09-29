@@ -2,11 +2,23 @@ import React from 'react'
 import { Grid } from '@mui/material'
 import Commonbutton from '../Component/Common/CommonButton/Commonbutton'
 const Authentication = () => {
+    const buttonstyle = {
+        backgroundColor: "yellow",
+
+
+    }
     return (
 
-        <Grid xs={6} item style={{ border: '1px solid red' }}>
+        <Grid xs={8} item >
             this is authentication page
-            <Commonbutton>Text</Commonbutton>
+            <Commonbutton
+                size="large"
+                // color="primary"
+                sx={buttonstyle}
+            >Text</Commonbutton>
+            <Commonbutton
+                variant="contained"
+            >Text</Commonbutton>
         </Grid>
 
     )
